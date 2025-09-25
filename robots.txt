@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://TU_USUARIO.github.io/TU_REPO/sitemap.xml
+
+Sitemap: https://resveratrolazen.github.io/Medellin/sitemap.xml
