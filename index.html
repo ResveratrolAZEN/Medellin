@@ -1,233 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>Resveratrol AZEN | Qué es y Beneficios</title>
+  <meta name="description" content="Resveratrol AZEN 98% pureza con Glutatión y NAD (B3). Qué es el resveratrol, beneficios antioxidantes, soporte cardiovascular y envejecimiento saludable. Domicilio en Medellín." />
+  <link rel="canonical" href="https://<TU_USUARIO>.github.io/<TU_REPO>/" />
+  <meta name="theme-color" content="#1a001f" />
+  <meta name="keywords" content="resveratrol, qué es el resveratrol, beneficios del resveratrol, resveratrol Medellín, antioxidante natural, suplemento antioxidante, glutatión, NAD B3, envejecimiento saludable, AZEN" />
+  <meta name="author" content="AZEN Suplementos" />
 
-  <!-- SEO -->
-  <meta name="description" content="Resveratrol AZEN: suplemento premium con 98% pureza, Glutatión y NAD (B3). Descubre qué es el resveratrol, sus beneficios antioxidantes, protección cardiovascular y apoyo al envejecimiento saludable. Domicilios en Medellín.">
-  <meta name="keywords" content="Resveratrol, qué es el resveratrol, beneficios del resveratrol, suplemento antioxidante, antioxidante natural, glutatión, NAD B3, envejecimiento saludable, suplemento Medellín, AZEN suplementos">
-  <meta name="author" content="AZEN Suplementos">
-
-  <!-- Open Graph (para redes sociales) -->
-  <meta property="og:title" content="Resveratrol AZEN | Qué es y Beneficios">
-  <meta property="og:description" content="Resveratrol 98% pureza con Glutatión y NAD (B3). Suplemento antioxidante premium en Medellín con domicilio incluido.">
-  <meta property="og:image" content="https://TU_DOMINIO/imagenes/frasco.jpeg">
-  <meta property="og:url" content="https://TU_DOMINIO/">
-  <meta property="og:type" content="website">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Resveratrol AZEN | Qué es y Beneficios" />
+  <meta property="og:description" content="Resveratrol 98% pureza con Glutatión y NAD (B3). Antioxidante premium. Envío en Medellín por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og_resveratrol.jpeg" />
+  <meta property="og:url" content="https://<TU_USUARIO>.github.io/<TU_REPO>/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
+    :root{
+      --morado:#9d4edd; --morado2:#6c2bd9; --osc:#0b0220; --gris:#eef3fb; --txt:#1b1b1f;
+      --borde:#e6ecf7; --card:#ffffff; --shadow:0 16px 36px rgba(109,40,217,.12)
     }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #000, #1a001f);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #9d4edd;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #ddd;
-    }
-    header img {
-      max-width: 250px;
-      margin: 20px auto;
-      display: block;
-    }
-    .btn-whatsapp {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      font-size: 1.1rem;
-      color: #fff;
-      background-color: #25d366;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .btn-whatsapp:hover {
-      background-color: #1ebc57;
-    }
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .benefits {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .benefit {
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-    }
-    .card h3 {
-      color: #9d4edd;
-    }
-    .card img {
-      max-width: 150px;
-      margin-bottom: 15px;
-    }
-    .price {
-      font-size: 1.5rem;
-      margin: 15px 0;
-      color: #fff;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 15px;
-      background: #111;
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-    article h3, article h4, article h5 {
-      margin-top: 20px;
-    }
-    article p {
-      margin-bottom: 15px;
+    *{box-sizing:border-box}
+    html,body{margin:0;font-family:system-ui,-apple-system,Inter,Segoe UI,Roboto,Arial,sans-serif;color:var(--txt);line-height:1.65}
+    a{color:var(--morado2);text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Header sticky */
+    header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.95);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--borde)}
+    .wrap{max-width:1100px;margin:auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{font-weight:800;color:var(--osc)}
+    .menu a{margin:0 10px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px;color:var(--osc)}
+    .hero p{font-size:1.05rem}
+    .hero .frame{border-radius:14px;background:#fff;box-shadow:var(--shadow);overflow:hidden}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700}
+    .btn.primary{background:var(--morado2);color:#fff}
+    .btn.ghost{border:2px solid var(--morado2);color:var(--morado2)}
+    .banner{background:linear-gradient(90deg,var(--morado2),var(--morado));color:#fff;border-radius:16px;padding:20px;margin-top:14px}
+
+    /* Sections */
+    section{padding:56px 0;border-top:1px solid #f0f4fb}
+    h2{color:var(--osc);margin-top:0}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+    ul.bul{margin:10px 0 0 18px}
+    .note{color:#475569;font-size:.95rem}
+
+    /* Products stripe */
+    .products .p-card img{max-width:160px;margin:0 auto 12px}
+    .price{font-weight:800;font-size:1.25rem}
+
+    /* Blog */
+    .blog article{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:22px}
+    .blog h3{margin-top:0;color:var(--osc)}
+    .blog h4{color:var(--morado2);margin-bottom:8px}
+    .lead{font-size:1.05rem;color:#273043}
+
+    /* FAQ */
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq details{border:1px solid var(--borde);border-radius:12px;padding:12px;margin:10px 0;background:#fff}
+
+    /* Footer */
+    footer{background:#0a1020;color:#c9d3ea;padding:28px 0;margin-top:40px}
+    footer a{color:#c9e1ff}
+
+    @media (max-width:940px){
+      .hero{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
     }
   </style>
+
+  <!-- Schema.org Product + FAQ + Articles -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Resveratrol AZEN 98% pureza",
+    "image": ["frasco_resveratrol.jpeg","30g.jpeg","300g.jpeg","500ml.jpeg"],
+    "description": "Resveratrol 98% pureza con Glutatión y NAD (B3). Antioxidante para soporte cardiovascular, energía y envejecimiento saludable.",
+    "brand": {"@type": "Brand","name": "AZEN"},
+    "sku": "RESV-AZEN-98",
+    "offers": {
+      "@type":"AggregateOffer",
+      "priceCurrency":"COP",
+      "lowPrice":"46900",
+      "highPrice":"65900",
+      "offerCount":"3",
+      "offers":[
+        {"@type":"Offer","price":"56900","url":"https://wa.me/573053447946","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","name":"Resveratrol 30 g (≈60 cápsulas)"},
+        {"@type":"Offer","price":"65900","url":"https://wa.me/573053447946","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","name":"Resveratrol 300 g"},
+        {"@type":"Offer","price":"46900","url":"https://wa.me/573053447946","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","name":"Resveratrol 500 ml (líquido)"}
+      ]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Qué es el resveratrol?","acceptedAnswer":{"@type":"Answer","text":"Es un polifenol antioxidante presente en la piel de la uva, frutos rojos y cacao, estudiado por su potencial en salud cardiovascular y envejecimiento saludable."}},
+      {"@type":"Question","name":"¿Cuáles son los beneficios del resveratrol?","acceptedAnswer":{"@type":"Answer","text":"Apoya la función endotelial y cardiovascular, reduce el estrés oxidativo, contribuye a la longevidad celular y puede favorecer la energía y el metabolismo."}},
+      {"@type":"Question","name":"¿Cómo se toma el resveratrol?","acceptedAnswer":{"@type":"Answer","text":"Usualmente 250–500 mg al día con alimentos. No recomendado en embarazo, lactancia o en combinación con anticoagulantes sin supervisión médica."}}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Blog",
+    "name":"Blog Resveratrol AZEN",
+    "url":"https://<TU_USUARIO>.github.io/<TU_REPO>/",
+    "blogPost":[
+      {"@type":"BlogPosting","headline":"Qué es el Resveratrol y sus Beneficios","author":{"@type":"Organization","name":"AZEN"},"image":"og_resveratrol.jpeg","articleSection":"Ciencia y bienestar","about":"resveratrol beneficios","url":"https://<TU_USUARIO>.github.io/<TU_REPO>/#art1"},
+      {"@type":"BlogPosting","headline":"Resveratrol y la Salud Cardiovascular: Guía práctica","author":{"@type":"Organization","name":"AZEN"},"image":"og_resveratrol.jpeg","articleSection":"Cardiosalud","about":"resveratrol corazón","url":"https://<TU_USUARIO>.github.io/<TU_REPO>/#art2"},
+      {"@type":"BlogPosting","headline":"Resveratrol y Envejecimiento Celular: Evidencia y uso seguro","author":{"@type":"Organization","name":"AZEN"},"image":"og_resveratrol.jpeg","articleSection":"Longevidad","about":"resveratrol envejecimiento","url":"https://<TU_USUARIO>.github.io/<TU_REPO>/#art3"}
+    ]
+  }
+  </script>
 </head>
 <body>
 
+<header>
+  <div class="wrap nav">
+    <div class="brand">AZEN • <span style="color:var(--morado2)">Resveratrol</span></div>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#que-es">Qué es</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#como-tomarlo">Cómo tomarlo</a>
+      <a href="#blog">Blog</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio" class="wrap">
   <!-- Hero -->
-  <header>
-    <h1>Resveratrol AZEN – Qué es y Beneficios</h1>
-    <p>Pureza certificada 98% – con Glutatión + NAD (B3)<br>
-    Descubre qué es el resveratrol y sus beneficios para tu salud</p>
-    <!-- Imagen principal (frasco) -->
-    <img src="frasco.jpeg" alt="Frasco suplemento Resveratrol AZEN antioxidante premium 98%">
-    <a href="https://wa.me/573053447946" target="_blank" class="btn-whatsapp">Compra ahora por WhatsApp</a>
-  </header>
+  <section class="hero">
+    <div>
+      <h1>Resveratrol AZEN 98% pureza</h1>
+      <p class="lead">Antioxidante de alto impacto combinado con <strong>Glutatión</strong> y <strong>NAD (B3)</strong> para apoyar la salud cardiovascular, la energía celular y un envejecimiento saludable. Envío con <strong>domicilio incluido en Medellín</strong>.</p>
+      <div class="banner" style="text-align:left">
+        <h3 style="margin:0 0 8px">Haz tu pedido ahora</h3>
+        <p style="margin:0 0 12px">Atención por WhatsApp y entregas en Medellín.</p>
+        <a class="btn" style="background:#fff;color:#1a001f" href="https://wa.me/573053447946">Comprar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="frame">
+      <img src="frasco_resveratrol.jpeg" alt="Frasco de Resveratrol AZEN 98% pureza con Glutatión y NAD B3">
+    </div>
+  </section>
+
+  <!-- Qué es -->
+  <section id="que-es" class="grid-2">
+    <div class="card">
+      <h2>¿Qué es el Resveratrol?</h2>
+      <p>El <strong>resveratrol</strong> es un polifenol natural presente en la piel de la uva, frutos rojos y el cacao. Se ha estudiado por su capacidad para <strong>neutralizar radicales libres</strong>, apoyar la <strong>función endotelial</strong> y contribuir a un <strong>envejecimiento saludable</strong>. En AZEN usamos <strong>98% pureza</strong> de la forma activa (trans-resveratrol) para maximizar su efectividad.</p>
+      <p>Nuestra fórmula combina <strong>Resveratrol + Glutatión + NAD (B3)</strong> para un enfoque integral: antioxidación, energía celular y protección frente al estrés oxidativo.</p>
+    </div>
+    <div class="card">
+      <h2>Componentes destacados</h2>
+      <ul class="bul">
+        <li>Resveratrol 98% (trans-resveratrol)</li>
+        <li>Glutatión (GSH) – defensa antioxidante celular</li>
+        <li>NAD (B3) – soporte de energía y longevidad</li>
+        <li>Excipientes de calidad y cápsulas vegetales (según presentación)</li>
+      </ul>
+      <p class="note">Presentaciones: 30 g (≈60 cápsulas), 300 g y 500 ml líquido.</p>
+    </div>
+  </section>
 
   <!-- Beneficios -->
-  <section class="section">
-    <h2>Beneficios del Resveratrol</h2>
-    <div class="benefits">
-      <div class="benefit">💜 Antioxidante natural que protege tus células</div>
-      <div class="benefit">💪 Ayuda a la salud cardiovascular</div>
-      <div class="benefit">🧬 Favorece la energía y longevidad celular</div>
-      <div class="benefit">🔥 Combate el envejecimiento prematuro</div>
+  <section id="beneficios">
+    <div class="wrap">
+      <h2>Beneficios del Resveratrol AZEN</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Antioxidante natural</h3>
+          <p>Ayuda a reducir el <strong>estrés oxidativo</strong> y protege la integridad celular frente a radicales libres.</p>
+        </div>
+        <div class="card">
+          <h3>Soporte cardiovascular</h3>
+          <p>Favorece la <strong>función endotelial</strong> y la elasticidad vascular, parte clave de la salud del corazón.</p>
+        </div>
+        <div class="card">
+          <h3>Longevidad celular</h3>
+          <p>Contribuye a la <strong>vitalidad celular</strong> y a la respuesta antienvejecimiento a largo plazo.</p>
+        </div>
+      </div>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="card">
+          <h3>Energía y metabolismo</h3>
+          <p>La sinergia con <strong>NAD (B3)</strong> apoya rutas energéticas y el rendimiento diario.</p>
+        </div>
+        <div class="card">
+          <h3>Neuroprotección</h3>
+          <p>Puede favorecer el <strong>flujo sanguíneo cerebral</strong> y la respuesta inflamatoria saludable.</p>
+        </div>
+        <div class="card">
+          <h3>Fórmula 98% pureza</h3>
+          <p>Calidad y trazabilidad para una experiencia consistente en cada presentación.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Productos -->
-  <section class="section">
-    <h2>Presentaciones y precios de Resveratrol AZEN</h2>
-    <p>Incluye domicilio en Medellín 🚚</p>
-    <div class="products">
-      <div class="card">
-        <img src="30g.jpeg" alt="Resveratrol 30g suplemento antioxidante en Medellín">
+  <!-- Cómo tomarlo -->
+  <section id="como-tomarlo" class="wrap grid-2">
+    <div class="card">
+      <h2>¿Cómo tomarlo?</h2>
+      <p>Dosis orientativa: <strong>250–500 mg</strong> al día, preferiblemente con alimentos. En cápsulas o líquido según preferencia.</p>
+      <ul class="bul">
+        <li>Constancia recomendada: <strong>8–12 semanas</strong>.</li>
+        <li>Combina con hábitos: hidratación, sueño y actividad física.</li>
+        <li>Se puede acompañar con otros suplementos según tolerancia.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Precauciones</h2>
+      <p class="note">No recomendado en embarazo, lactancia ni en menores de edad. Si tomas <strong>anticoagulantes</strong> u otros fármacos, consulta a tu médico antes de usarlo. Este producto es un <strong>suplemento dietario</strong>, no reemplaza una alimentación equilibrada ni tratamientos médicos.</p>
+      <a class="btn primary" href="https://wa.me/573053447946">Comprar ahora</a>
+    </div>
+  </section>
+
+  <!-- Presentaciones y precios -->
+  <section class="wrap products">
+    <h2>Presentaciones y precios</h2>
+    <p class="note">Incluye <strong>domicilio en Medellín</strong> 🚚</p>
+    <div class="grid-3">
+      <div class="card p-card">
+        <img src="30g.jpeg" alt="Resveratrol AZEN 30g (≈60 cápsulas)">
         <h3>30 g (≈60 cápsulas)</h3>
-        <p>Fórmula premium con 98% pureza.<br>Ideal para iniciar.</p>
-        <div class="price">$56.900</div>
-        <a href="https://wa.me/573053447946" target="_blank" class="btn-whatsapp">Comprar por WhatsApp</a>
+        <p>Ideal para iniciar. 98% pureza.</p>
+        <p class="price">$56.900</p>
+        <a class="btn ghost" href="https://wa.me/573053447946">Comprar por WhatsApp</a>
       </div>
-      <div class="card">
-        <img src="300g.jpeg" alt="Resveratrol 300g suplemento premium antioxidante">
+      <div class="card p-card">
+        <img src="300g.jpeg" alt="Resveratrol AZEN 300g">
         <h3>300 g</h3>
-        <p>Opción más rentable 💎<br>Mayor duración y ahorro por gramo.</p>
-        <div class="price">$65.900</div>
-        <a href="https://wa.me/573053447946" target="_blank" class="btn-whatsapp">Comprar por WhatsApp</a>
+        <p>Mayor duración y mejor relación costo/gramo.</p>
+        <p class="price">$65.900</p>
+        <a class="btn ghost" href="https://wa.me/573053447946">Comprar por WhatsApp</a>
       </div>
-      <div class="card">
-        <img src="500ml.jpeg" alt="Resveratrol líquido 500ml antioxidante">
+      <div class="card p-card">
+        <img src="500ml.jpeg" alt="Resveratrol AZEN 500ml líquido">
         <h3>500 ml (líquido)</h3>
-        <p>Absorción rápida y fácil dosificación.<br>Ideal si no usas cápsulas.</p>
-        <div class="price">$46.900</div>
-        <a href="https://wa.me/573053447946" target="_blank" class="btn-whatsapp">Comprar por WhatsApp</a>
+        <p>Absorción rápida, sin cápsulas.</p>
+        <p class="price">$46.900</p>
+        <a class="btn ghost" href="https://wa.me/573053447946">Comprar por WhatsApp</a>
       </div>
     </div>
   </section>
 
-  <!-- Qué es el resveratrol -->
-  <section class="section">
-    <h2>¿Qué es el Resveratrol?</h2>
-    <p>El resveratrol es un polifenol natural presente en la piel de la uva, frutos rojos y el cacao. Es conocido como un potente antioxidante que protege frente al daño celular, el envejecimiento prematuro y favorece la salud cardiovascular. Con AZEN, obtienes un suplemento de <strong>98% pureza</strong>, reforzado con <strong>Glutatión</strong> y <strong>NAD (B3)</strong>, diseñado para potenciar tu bienestar.</p>
-  </section>
+  <!-- BLOG POTENTE: 3 artículos -->
+  <section id="blog" class="wrap blog">
+    <h2>Blog de Resveratrol: Ciencia, Beneficios y Guías</h2>
 
-  <!-- Blog -->
-  <section class="section" style="background:#111; text-align:left; max-width:900px; margin:auto; padding:40px; border-radius:12px;">
-    <h2 style="color:#9d4edd; text-align:center;">Blog de Salud y Bienestar</h2>
+    <!-- Artículo 1 -->
+    <article id="art1">
+      <h3>Qué es el Resveratrol y sus Beneficios</h3>
+      <p class="lead">El resveratrol es un <strong>polifenol antioxidante</strong> que se encuentra de forma natural en la piel de la uva, frutos rojos y cacao. Su popularidad se debe a su potencial para apoyar la salud cardiovascular, modular la respuesta inflamatoria y contribuir a un envejecimiento saludable.</p>
 
-    <article>
-      <h3 style="color:#fff;">Qué es el Resveratrol y sus Beneficios</h3>
+      <h4>Origen y formas del resveratrol</h4>
+      <p>Este compuesto existe en dos isómeros, <strong>cis</strong> y <strong>trans</strong>, siendo el <em>trans-resveratrol</em> la forma considerada más activa. En suplementos de calidad se estandariza su pureza, como en <strong>Resveratrol AZEN 98%</strong>, para asegurar consistencia y eficacia. En alimentos, aparece en bajas concentraciones, por lo que la suplementación es una vía práctica para obtener cantidades útiles.</p>
 
-      <p>El <strong>resveratrol</strong> es un polifenol natural que ha captado la atención de la ciencia y la nutrición en las últimas décadas. Se encuentra principalmente en la piel de las uvas, en algunos frutos rojos como las moras y arándanos, y en alimentos como el cacao y el maní. Su fama mundial creció cuando se asoció con el llamado <em>“paradoja francesa”</em>, es decir, la observación de que las poblaciones francesas tenían una menor incidencia de enfermedades cardiovasculares a pesar de consumir dietas ricas en grasas, atribuyendo parte de este fenómeno al consumo moderado de vino tinto rico en resveratrol.</p>
+      <h4>Beneficios principales</h4>
+      <ul>
+        <li><strong>Antioxidante celular:</strong> contribuye a neutralizar radicales libres, protegiendo membranas y material genético frente al estrés oxidativo.</li>
+        <li><strong>Soporte cardiovascular:</strong> puede favorecer la función endotelial y el tono vascular, aspectos clave de la salud del corazón.</li>
+        <li><strong>Longevidad y energía:</strong> junto con <strong>NAD (B3)</strong>, el resveratrol apoya rutas metabólicas vinculadas a la vitalidad y la eficiencia energética.</li>
+        <li><strong>Neuroprotección:</strong> evidencia preliminar sugiere beneficios en flujo sanguíneo cerebral y marcadores cognitivos.</li>
+      </ul>
 
-      <p>Hoy sabemos que el resveratrol es mucho más que una moda. Sus propiedades antioxidantes, antiinflamatorias y protectoras del sistema cardiovascular lo han convertido en uno de los suplementos más estudiados. En <strong>AZEN Suplementos</strong> ofrecemos un resveratrol de <strong>98% pureza</strong>, enriquecido con <strong>Glutatión</strong> y <strong>NAD (B3)</strong>, diseñado para potenciar sus beneficios y apoyar tu bienestar desde dentro.</p>
+      <h4>Cómo tomarlo de forma segura</h4>
+      <p>Una pauta común es <strong>250–500 mg al día</strong> con alimentos, manteniendo constancia al menos por <strong>8–12 semanas</strong>. No se recomienda en embarazo, lactancia ni en combinación con anticoagulantes sin supervisión profesional.</p>
 
-      <h4 style="color:#9d4edd;">¿Qué es el Resveratrol?</h4>
-      <p>El resveratrol es un <strong>compuesto fenólico</strong> (polifenol) que actúa como defensa natural en plantas frente a infecciones y estrés ambiental. En los humanos, este compuesto funciona como un <strong>antioxidante</strong>, ayudando a neutralizar los radicales libres responsables del daño celular y el envejecimiento prematuro.</p>
-      <p>Existen dos tipos de resveratrol: el <strong>cis-resveratrol</strong> y el <strong>trans-resveratrol</strong>, siendo este último el más activo y beneficioso para la salud. En suplementos de calidad, como los de AZEN, se garantiza la presencia de la forma activa en su máxima pureza.</p>
+      <p>👉 ¿Lista/o para empezar? <a href="https://wa.me/573053447946">Pide tu Resveratrol AZEN por WhatsApp</a> (domicilio incluido en Medellín).</p>
+    </article>
 
-      <h4 style="color:#9d4edd;">Beneficios del Resveratrol</h4>
+    <!-- Artículo 2 -->
+    <article id="art2">
+      <h3>Resveratrol y la Salud Cardiovascular: Guía práctica</h3>
+      <p class="lead">La salud cardiovascular depende del buen estado del <strong>endotelio</strong>, la elasticidad vascular y el equilibrio oxidativo. El resveratrol se ha estudiado por su potencial para apoyar estos tres frentes.</p>
 
-      <h5 style="color:#fff;">1. Salud cardiovascular</h5>
-      <p>El resveratrol ayuda a <strong>proteger el sistema circulatorio</strong> al mejorar la función del endotelio (pared interna de los vasos sanguíneos). Estudios sugieren que puede contribuir a la reducción de la presión arterial, mejorar la elasticidad vascular y disminuir la oxidación del colesterol LDL, uno de los principales responsables de la aterosclerosis.</p>
+      <h4>Función endotelial y tono vascular</h4>
+      <p>El endotelio regula vasodilatación, permeabilidad y coagulación. Bajo estrés oxidativo, su desempeño se altera. El resveratrol, por su acción antioxidante, puede <strong>favorecer la biodisponibilidad de óxido nítrico</strong> y apoyar la función de las células endoteliales, con impacto positivo en la circulación.</p>
 
-      <h5 style="color:#fff;">2. Efecto antioxidante y antienvejecimiento</h5>
-      <p>Los radicales libres son moléculas inestables que dañan las células y aceleran el envejecimiento. El resveratrol actúa como un <strong>escudo antioxidante</strong>, reduciendo el estrés oxidativo y favoreciendo la longevidad celular. Este efecto se potencia al combinarlo con Glutatión y NAD (B3), dos moléculas clave en la regeneración y energía celular.</p>
+      <h4>Colesterol y estrés oxidativo</h4>
+      <p>El colesterol LDL oxidado participa en la aterogénesis. Al reducir la oxidación lipídica, el resveratrol puede contribuir a un entorno vascular más saludable. Esta acción se complementa con hábitos de vida: alimentación balanceada, actividad física y manejo del estrés.</p>
 
-      <h5 style="color:#fff;">3. Apoyo al metabolismo y energía</h5>
-      <p>El resveratrol influye en genes relacionados con el metabolismo energético, favoreciendo el uso más eficiente de la glucosa y los lípidos. Esto puede ser de utilidad en personas con resistencia a la insulina o que buscan mejorar su nivel de energía diaria. Su sinergia con NAD (B3) lo convierte en un suplemento clave para la vitalidad.</p>
+      <h4>Plan de acción en 4 pasos</h4>
+      <ol>
+        <li><strong>Base:</strong> mejora de hábitos (hidratación, fibra, grasas saludables).</li>
+        <li><strong>Movimiento:</strong> 150 min/semana de actividad aeróbica + fuerza.</li>
+        <li><strong>Suplementación:</strong> Resveratrol AZEN 250–500 mg/día con alimentos.</li>
+        <li><strong>Monitoreo:</strong> controles periódicos con tu profesional de salud.</li>
+      </ol>
 
-      <h5 style="color:#fff;">4. Protección cerebral</h5>
-      <p>Investigaciones preliminares han mostrado que el resveratrol puede <strong>favorecer la salud cerebral</strong> al mejorar el flujo sanguíneo y reducir la inflamación neuronal. Esto se traduce en beneficios potenciales para la memoria y la concentración, aunque aún se requieren más estudios clínicos.</p>
+      <p>📌 Recuerda: el resveratrol es un apoyo, no sustituye tratamientos. <a href="https://wa.me/573053447946">Contáctanos por WhatsApp</a>.</p>
+    </article>
 
-      <h5 style="color:#fff;">5. Potencial en la regulación inflamatoria</h5>
-      <p>El resveratrol tiene propiedades antiinflamatorias que pueden ayudar a modular la respuesta del sistema inmune. Al reducir la inflamación crónica de bajo grado, se asocia con beneficios en la prevención de enfermedades degenerativas.</p>
+    <!-- Artículo 3 -->
+    <article id="art3">
+      <h3>Resveratrol y Envejecimiento Celular: Evidencia y uso seguro</h3>
+      <p class="lead">El envejecimiento está ligado al aumento del <strong>daño oxidativo</strong> y a la disminución de la eficiencia energética celular. El resveratrol se ha explorado como parte de estrategias de <strong>bienestar y longevidad</strong>.</p>
 
-      <h4 style="color:#9d4edd;">¿Cómo tomar el Resveratrol?</h4>
-      <p>La dosis recomendada varía entre <strong>250 y 500 mg diarios</strong>, preferiblemente acompañada de alimentos para mejorar su absorción. En AZEN ofrecemos presentaciones en cápsulas y líquido que facilitan la adaptación a cada estilo de vida. </p>
-      <p><strong>Precauciones:</strong> no se recomienda en mujeres embarazadas, en periodo de lactancia ni en menores de edad. Si consumes medicamentos anticoagulantes, consulta a tu médico antes de tomar resveratrol.</p>
+      <h4>Estrés oxidativo y radicales libres</h4>
+      <p>Los radicales libres dañan proteínas, lípidos y ADN. Un sistema antioxidante robusto ayuda a mantener la integridad celular. El resveratrol actúa como <strong>modulador del equilibrio redox</strong>, creando un ambiente más favorable para la homeostasis.</p>
 
-      <h4 style="color:#9d4edd;">Conclusión</h4>
-      <p>El resveratrol no es solo una moda nutricional: es un <strong>antioxidante respaldado por la ciencia</strong> con beneficios comprobados en la salud cardiovascular, la longevidad y el metabolismo. Al elegir <strong>Resveratrol AZEN</strong>, obtienes una fórmula de pureza certificada y enriquecida con Glutatión y NAD (B3), diseñada para maximizar sus efectos positivos.</p>
-      <p>👉 Si deseas experimentar los beneficios del resveratrol en tu vida diaria, <a href="https://wa.me/573053447946" style="color:#25d366;">haz tu pedido ahora por WhatsApp</a> y recibe tu suplemento premium con <strong>domicilio incluido en Medellín</strong>.</p>
+      <h4>Sinergia con Glutatión y NAD (B3)</h4>
+      <p>El <strong>Glutatión</strong> es un antioxidante maestro que interviene en detoxificación y defensa celular. El <strong>NAD (B3)</strong> participa en reacciones de óxido-reducción y en rutas energéticas. Juntos con el resveratrol, conforman una triada orientada a <strong>protección y energía</strong>.</p>
+
+      <h4>Uso seguro y sostenido</h4>
+      <p>Para objetivos de longevidad, se recomienda una aproximación gradual y sostenida, con seguimiento profesional en personas con condiciones médicas. La consistencia (8–12 semanas) es clave para evaluar respuesta.</p>
+
+      <p>✨ Empieza hoy: <a href="https://wa.me/573053447946">Resveratrol AZEN con domicilio en Medellín</a>.</p>
     </article>
   </section>
 
-  <!-- CTA final -->
-  <section class="section" style="background: #1a001f;">
-    <h2>Haz tu pedido de Resveratrol en Medellín</h2>
-    <p>Recibe tu suplemento premium con domicilio incluido 🚚</p>
-    <a href="https://wa.me/573053447946" target="_blank" class="btn-whatsapp">Escríbenos por WhatsApp</a>
+  <!-- FAQ -->
+  <section id="faq" class="wrap">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details>
+        <summary>¿En cuánto tiempo se ven resultados?</summary>
+        <p>La mayoría de usuarios percibe cambios entre <strong>8 y 12 semanas</strong> de uso constante junto con hábitos saludables.</p>
+      </details>
+      <details>
+        <summary>¿Puedo combinarlo con otros suplementos?</summary>
+        <p>Sí, suele combinarse con vitamina C u otros antioxidantes. Si tomas medicamentos (p. ej., anticoagulantes), consulta a tu médico.</p>
+      </details>
+      <details>
+        <summary>¿Tiene contraindicaciones?</summary>
+        <p>No recomendado en embarazo, lactancia y menores de edad. Personas bajo tratamiento deben consultar a su profesional de salud.</p>
+      </details>
+    </div>
   </section>
 
-  <footer>
-    <p>Suplemento dietario. No reemplaza una alimentación equilibrada ni tratamientos médicos.  
-    No recomendado en embarazo, lactancia o menores de edad.</p>
-    <p>© 2025 AZEN – Todos los derechos reservados</p>
-  </footer>
+  <!-- Contacto / Políticas -->
+  <section id="contacto" class="wrap grid-2">
+    <div class="card">
+      <h2>Contacto</h2>
+      <p><b>WhatsApp:</b> <a href="https://wa.me/573053447946">+57 3053447946</a><br>
+         <b>Correo:</b> <a href="mailto:resveratrolazen@gmail.com">resveratrolazen@gmail.com</a><br>
+         <b>Ubicación:</b> Medellín, Colombia</p>
+    </div>
+    <div class="card">
+      <h2>Políticas</h2>
+      <p class="note">Este producto es un <strong>suplemento dietario</strong>, no un medicamento.  
+      No sustituye una alimentación equilibrada ni la asesoría médica profesional.  
+      Recomendamos consultar a un profesional de salud si estás embarazada, lactando, tomas anticoagulantes o estás bajo tratamiento médico.  
+      Envíos en Colombia, con <strong>domicilio incluido en Medellín</strong>.</p>
+    </div>
+  </section>
+</main>
 
+<footer>
+  <div class="wrap">
+    © <span id="y"></span> AZEN. Todos los derechos reservados.
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
