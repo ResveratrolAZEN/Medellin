@@ -32,7 +32,19 @@
     .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:36px 0}
     .hero h1{font-size:clamp(28px,4vw,44px);margin:0 0 12px;color:var(--osc)}
     .hero p{font-size:1.05rem}
-    .hero img{width:100%;max-width:480px;border-radius:14px;background:#fff;box-shadow:0 16px 36px rgba(109,40,217,.15)}
+
+    /* Imágenes responsivas */
+    .hero img,
+    .card img {
+      max-width: 100%;
+      max-height: 320px; /* límite en PC */
+      height: auto;
+      display: block;
+      margin: auto;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+
     .btn{display:inline-block;padding:12px 18px;border-radius:12px;font-weight:700}
     .btn.primary{background:var(--morado);color:#fff}
     section{padding:56px 0;border-top:1px solid #f0f4fb}
@@ -47,9 +59,29 @@
     .blog h3{margin-top:0;color:var(--osc)}
     .faq summary{cursor:pointer;font-weight:700}
     .faq details{border:1px solid #e9eef6;border-radius:12px;padding:12px;margin:10px 0;background:#fff}
-    footer{background:#0a1020;color:#c9d3ea;padding:28px 0;margin-top:40px}
+    footer{background:#0a1020;color:#c9d3ea;padding:28px 0;margin-top:40px;text-align:center;font-size:0.95rem;line-height:1.5}
     footer a{color:#c9e1ff}
-    @media (max-width:940px){.hero{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+
+    /* Tarjetas de productos */
+    .p-card img {
+      max-height: 220px; /* límite en PC */
+      object-fit: contain;
+      margin-bottom: 12px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero .banner { text-align: center !important; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .p-card img {
+        max-height: 160px; /* más pequeño en móvil */
+      }
+    }
 
     /* Menú hamburguesa */
     .menu-toggle { display: none; font-size: 28px; cursor: pointer; }
@@ -70,49 +102,6 @@
       .menu-toggle { display: block; }
     }
   </style>
-
-  <!-- JSON-LD Producto mejorado -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "Resveratrol AZEN 98% Pureza",
-    "image": "https://resveratrolazen.github.io/Medellin/frasco_resveratrol.jpeg",
-    "description": "Suplemento antioxidante con Resveratrol 98% pureza, Glutatión y NAD (B3). Beneficios para salud cardiovascular, energía celular y envejecimiento saludable.",
-    "brand": { "@type": "Brand", "name": "AZEN" },
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "15" },
-    "review": [{
-      "@type": "Review",
-      "author": "Cliente verificado",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Muy buen suplemento, noté más energía y bienestar después de 2 meses de uso."
-    }],
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "COP",
-      "price": "56900",
-      "priceValidUntil": "2025-12-31",
-      "availability": "https://schema.org/InStock",
-      "url": "https://wa.me/573053447946",
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "CO",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 7
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "COP" },
-        "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "CO" },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "d" },
-          "transitTime": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 5, "unitCode": "d" }
-        }
-      }
-    }
-  }
-  </script>
 </head>
 <body>
 <header>
@@ -130,6 +119,7 @@
     </nav>
   </div>
 </header>
+
 <main id="inicio" class="wrap">
   <!-- Hero -->
   <section class="hero">
